@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app_environment_id: bf5af704-bc15-4abd-a220-55a9e62bc71a
+    env_id: 45229c15-2b1b-4142-8b3d-24b6b2228bb9
+    env_name: cicd
+    organization_id: 8b881a3f-0c62-4ca4-ab9a-db66a32ed28c
+    platformer_app_id: 7621faac-5b5c-4a3c-ab71-289d928c98c5
+    platformer_app_name: cicd-github-test-two
+    platformer_component: rudder
+    platformer_system: "true"
+    project_id: e3aaf0d5-6bd6-402e-a8ba-7811cb565b4e
+  name: cicd-github-test-two
+  namespace: chamod
+spec:
+  selector:
+    app_environment_id: bf5af704-bc15-4abd-a220-55a9e62bc71a
+    env_id: 45229c15-2b1b-4142-8b3d-24b6b2228bb9
+    env_name: cicd
+    organization_id: 8b881a3f-0c62-4ca4-ab9a-db66a32ed28c
+    platformer_app_id: 7621faac-5b5c-4a3c-ab71-289d928c98c5
+    platformer_app_name: cicd-github-test-two
+    platformer_component: rudder
+    platformer_system: "true"
+    project_id: e3aaf0d5-6bd6-402e-a8ba-7811cb565b4e
+  type: ClusterIP
