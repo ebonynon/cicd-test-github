@@ -19,8 +19,8 @@ jobs:
       - name: Login to Docker Container Registry
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_USERNAME_1f22f10c-a2d3-444b-a3ca-7ac9c023a7ea }}
-          password: ${{ secrets.DOCKER_PASSWORD_1f22f10c-a2d3-444b-a3ca-7ac9c023a7ea }}
+          username: ${{ secrets.DOCKER_USERNAME_1f22f10c_a2d3_444b_a3ca_7ac9c023a7ea }}
+          password: ${{ secrets.DOCKER_PASSWORD_1f22f10c_a2d3_444b_a3ca_7ac9c023a7ea }}
       - name: Build the Docker image
         run: docker build --tag
           ${SERVICE_NAME}:${{steps.event-version.outputs.SOURCE_TAG }} --file
